@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="loading_title">Loading</string>
+    <string name="loading_message">We are loading your latest weather report...</string>
+    <string name="unable_to_load_error">Unable to load the report, please try again</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="weather_report">Sydney\'s Weather Report</string>
+    <string name="available_funds">Available funds</string>
+    <string name="account_balance">Account balance</string>
+    <string name="temperature">Temperature:</string>
+    <string name="wind_speed">Wind speed:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="today_weather">Today\'s weather:</string>
+</resources>

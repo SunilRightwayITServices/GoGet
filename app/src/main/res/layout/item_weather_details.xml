@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/weather_rows_height"
+    android:background="@color/grey_background">
+
+    <TextView
+        android:id="@+id/temperature_summary_label"
+        style="@style/BlackText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/temperature" />
+
+    <TextView
+        android:id="@+id/temperature_text_view"
+        style="@style/BlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintLeft_toRightOf="@id/temperature_summary_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="47 C" />
+
+    <TextView
+        android:id="@+id/wind_speed_label"
+        style="@style/BlackText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/temperature_summary_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/wind_speed" />
+
+    <TextView
+        android:id="@+id/wind_speed_text_view"
+        style="@style/BlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintLeft_toRightOf="@id/wind_speed_label"
+        app:layout_constraintTop_toBottomOf="@id/temperature_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="15 KPH" />
+
+    <TextView
+        android:id="@+id/humidity_label"
+        style="@style/BlackText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/wind_speed_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/humidity" />
+
+    <TextView
+        android:id="@+id/humidity_text_view"
+        style="@style/BlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintLeft_toRightOf="@id/humidity_label"
+        app:layout_constraintTop_toBottomOf="@id/wind_speed_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="88%" />
+
+    <TextView
+        android:id="@+id/pressure_label"
+        style="@style/BlackText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/humidity_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/pressure" />
+
+    <TextView
+        android:id="@+id/pressure_text_view"
+        style="@style/BlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintLeft_toRightOf="@id/pressure_label"
+        app:layout_constraintTop_toBottomOf="@id/humidity_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="1019.11" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
